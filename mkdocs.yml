@@ -1,0 +1,215 @@
+site_name: Korean Learning Guide
+site_description: Comprehensive Korean language learning from beginner to advanced
+site_author: Steven
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+    - toc.integrate
+  font:
+    text: Noto Sans KR
+    code: Roboto Mono
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+
+  - "1. Beginner":
+    - 01-beginner/index.md
+    - "1.1 Hangul":
+      - 01-beginner/01-hangul/index.md
+      - Consonants: 01-beginner/01-hangul/consonants.md
+      - Vowels: 01-beginner/01-hangul/vowels.md
+      - Compound Vowels: 01-beginner/01-hangul/compound-vowels.md
+      - Double Consonants: 01-beginner/01-hangul/double-consonants.md
+      - Batchim (Final Consonants): 01-beginner/01-hangul/batchim.md
+      - Sound Changes: 01-beginner/01-hangul/sound-changes.md
+    - "1.2 Basic Grammar":
+      - 01-beginner/02-basic-grammar/index.md
+      - Sentence Structure: 01-beginner/02-basic-grammar/sentence-structure.md
+      - "Particles: Topic & Subject": 01-beginner/02-basic-grammar/particles-topic-subject.md
+      - "Particles: Object": 01-beginner/02-basic-grammar/particles-object.md
+      - "Particles: Location": 01-beginner/02-basic-grammar/particles-location.md
+      - "Particles: Direction": 01-beginner/02-basic-grammar/particles-direction.md
+      - Verb Conjugation Basics: 01-beginner/02-basic-grammar/verb-conjugation-basics.md
+      - Present Tense: 01-beginner/02-basic-grammar/present-tense.md
+      - Past Tense: 01-beginner/02-basic-grammar/past-tense.md
+      - Future Tense: 01-beginner/02-basic-grammar/future-tense.md
+      - Negation: 01-beginner/02-basic-grammar/negation.md
+      - Questions: 01-beginner/02-basic-grammar/questions.md
+    - "1.3 Numbers":
+      - 01-beginner/03-numbers/index.md
+      - Native Korean Numbers: 01-beginner/03-numbers/native-korean.md
+      - Sino-Korean Numbers: 01-beginner/03-numbers/sino-korean.md
+      - Counters: 01-beginner/03-numbers/counters.md
+      - Dates: 01-beginner/03-numbers/dates.md
+      - Time: 01-beginner/03-numbers/time.md
+    - "1.4 Basic Expressions":
+      - 01-beginner/04-basic-expressions/index.md
+      - Greetings: 01-beginner/04-basic-expressions/greetings.md
+      - Self Introduction: 01-beginner/04-basic-expressions/self-introduction.md
+      - Asking Questions: 01-beginner/04-basic-expressions/asking-questions.md
+      - Common Phrases: 01-beginner/04-basic-expressions/common-phrases.md
+    - "1.5 Basic Vocabulary":
+      - 01-beginner/05-basic-vocabulary/index.md
+      - Family: 01-beginner/05-basic-vocabulary/family.md
+      - Food: 01-beginner/05-basic-vocabulary/food.md
+      - Places: 01-beginner/05-basic-vocabulary/places.md
+      - Essential Verbs: 01-beginner/05-basic-vocabulary/verbs-essential.md
+      - Essential Adjectives: 01-beginner/05-basic-vocabulary/adjectives-essential.md
+
+  - "2. Elementary":
+    - 02-elementary/index.md
+    - "2.1 Connectors":
+      - 02-elementary/01-connectors/index.md
+      - "And (-고)": 02-elementary/01-connectors/and-connector.md
+      - "Because (-서, -니까)": 02-elementary/01-connectors/because-connector.md
+      - "But (-지만, -는데)": 02-elementary/01-connectors/but-connector.md
+      - "If (-면)": 02-elementary/01-connectors/if-connector.md
+      - "When (-을 때)": 02-elementary/01-connectors/when-connector.md
+    - "2.2 Verb Forms":
+      - 02-elementary/02-verb-forms/index.md
+      - "Want to (-고 싶다)": 02-elementary/02-verb-forms/want-to.md
+      - "Can/Cannot (-ㄹ 수 있다)": 02-elementary/02-verb-forms/can-cannot.md
+      - "Try to (-아/어 보다)": 02-elementary/02-verb-forms/try-to.md
+      - "Must/Should (-아/어야 하다)": 02-elementary/02-verb-forms/must-should.md
+      - "Progressive (-고 있다)": 02-elementary/02-verb-forms/progressive.md
+      - Descriptive Verbs: 02-elementary/02-verb-forms/descriptive-verbs.md
+    - "2.3 Advanced Particles":
+      - 02-elementary/03-particles-advanced/index.md
+      - "Also/Too (도)": 02-elementary/03-particles-advanced/also-too.md
+      - "Only (만, 밖에)": 02-elementary/03-particles-advanced/only.md
+      - "From/To (부터, 까지)": 02-elementary/03-particles-advanced/from-to.md
+      - "With (와/과, 하고)": 02-elementary/03-particles-advanced/with.md
+      - Comparison: 02-elementary/03-particles-advanced/comparison.md
+    - "2.4 Speech Levels":
+      - 02-elementary/04-speech-levels/index.md
+      - Polite Informal: 02-elementary/04-speech-levels/polite-informal.md
+      - Casual Speech: 02-elementary/04-speech-levels/casual.md
+      - Formal Polite: 02-elementary/04-speech-levels/formal-polite.md
+
+  - "3. Intermediate":
+    - 03-intermediate/index.md
+    - "3.1 Complex Grammar":
+      - 03-intermediate/01-complex-grammar/index.md
+      - Noun Modification: 03-intermediate/01-complex-grammar/noun-modification.md
+      - Nominalizing: 03-intermediate/01-complex-grammar/nominalizing.md
+      - While/During: 03-intermediate/01-complex-grammar/while-during.md
+      - Purpose: 03-intermediate/01-complex-grammar/purpose.md
+      - Result: 03-intermediate/01-complex-grammar/result.md
+      - Degree: 03-intermediate/01-complex-grammar/degree.md
+    - "3.2 Reported Speech":
+      - 03-intermediate/02-reported-speech/index.md
+      - Statements: 03-intermediate/02-reported-speech/statements.md
+      - Questions: 03-intermediate/02-reported-speech/questions.md
+      - Commands: 03-intermediate/02-reported-speech/commands.md
+      - Suggestions: 03-intermediate/02-reported-speech/suggestions.md
+    - "3.3 Passive & Causative":
+      - 03-intermediate/03-passive-causative/index.md
+      - Passive Verbs: 03-intermediate/03-passive-causative/passive-verbs.md
+      - Causative Verbs: 03-intermediate/03-passive-causative/causative-verbs.md
+      - Passive Expressions: 03-intermediate/03-passive-causative/passive-expressions.md
+    - "3.4 Honorifics":
+      - 03-intermediate/04-honorifics/index.md
+      - Subject Honorific: 03-intermediate/04-honorifics/subject-honorific.md
+      - Humble Forms: 03-intermediate/04-honorifics/humble-forms.md
+      - Honorific Vocabulary: 03-intermediate/04-honorifics/honorific-vocabulary.md
+      - Workplace Korean: 03-intermediate/04-honorifics/workplace-korean.md
+    - "3.5 Advanced Conjunctions":
+      - 03-intermediate/05-conjunctions-advanced/index.md
+      - Contrast: 03-intermediate/05-conjunctions-advanced/contrast.md
+      - Condition: 03-intermediate/05-conjunctions-advanced/condition.md
+      - Concession: 03-intermediate/05-conjunctions-advanced/concession.md
+      - Addition: 03-intermediate/05-conjunctions-advanced/addition.md
+
+  - "4. Upper-Intermediate":
+    - 04-upper-intermediate/index.md
+    - "4.1 Nuanced Expressions":
+      - 04-upper-intermediate/01-nuanced-expressions/index.md
+      - Speculation: 04-upper-intermediate/01-nuanced-expressions/speculation.md
+      - Regret: 04-upper-intermediate/01-nuanced-expressions/regret.md
+      - Intention: 04-upper-intermediate/01-nuanced-expressions/intention.md
+      - Hearsay: 04-upper-intermediate/01-nuanced-expressions/hearsay.md
+    - "4.2 Written Korean":
+      - 04-upper-intermediate/02-written-korean/index.md
+      - Formal Written Style: 04-upper-intermediate/02-written-korean/formal-written.md
+      - Academic Style: 04-upper-intermediate/02-written-korean/academic-style.md
+      - News Style: 04-upper-intermediate/02-written-korean/news-style.md
+      - Essay Writing: 04-upper-intermediate/02-written-korean/essay-writing.md
+    - "4.3 Colloquial Korean":
+      - 04-upper-intermediate/03-colloquial-korean/index.md
+      - Contractions: 04-upper-intermediate/03-colloquial-korean/contractions.md
+      - Slang Basics: 04-upper-intermediate/03-colloquial-korean/slang-basics.md
+      - Texting Language: 04-upper-intermediate/03-colloquial-korean/texting-language.md
+      - Filler Words: 04-upper-intermediate/03-colloquial-korean/filler-words.md
+    - "4.4 Idiomatic Expressions":
+      - 04-upper-intermediate/04-idiomatic-expressions/index.md
+      - Body Idioms: 04-upper-intermediate/04-idiomatic-expressions/body-idioms.md
+      - Color Idioms: 04-upper-intermediate/04-idiomatic-expressions/color-idioms.md
+      - Common Proverbs: 04-upper-intermediate/04-idiomatic-expressions/common-proverbs.md
+
+  - "5. Advanced":
+    - 05-advanced/index.md
+    - "5.1 Advanced Grammar":
+      - 05-advanced/01-advanced-grammar/index.md
+      - Literary Forms: 05-advanced/01-advanced-grammar/literary-forms.md
+      - Archaic Endings: 05-advanced/01-advanced-grammar/archaic-endings.md
+      - Formal Particles: 05-advanced/01-advanced-grammar/formal-particles.md
+      - Complex Patterns: 05-advanced/01-advanced-grammar/complex-patterns.md
+    - "5.2 Hanja":
+      - 05-advanced/02-hanja/index.md
+      - Why Learn Hanja: 05-advanced/02-hanja/why-learn.md
+      - Common Hanja 100: 05-advanced/02-hanja/common-100.md
+      - Hanja Word Formation: 05-advanced/02-hanja/word-formation.md
+      - Hanja in Daily Life: 05-advanced/02-hanja/daily-life.md
+    - "5.3 Specialized Korean":
+      - 05-advanced/03-specialized-korean/index.md
+      - Business Korean: 05-advanced/03-specialized-korean/business.md
+      - Academic Korean: 05-advanced/03-specialized-korean/academic.md
+      - Media Korean: 05-advanced/03-specialized-korean/media.md
+
+  - Appendix:
+    - Grammar Reference: appendix/grammar-reference.md
+    - Particle Summary: appendix/particle-summary.md
+    - Verb Conjugation Tables: appendix/verb-conjugation-tables.md
+    - Irregular Verbs: appendix/irregular-verbs.md
+    - TOPIK Vocabulary: appendix/topik-vocabulary.md
+    - Resources: appendix/resources.md
