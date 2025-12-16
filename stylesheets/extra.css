@@ -1,0 +1,46 @@
+/* Korean text styling */
+.korean {
+  font-size: 1.2em;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Quick reference boxes */
+.quick-ref {
+  background-color: var(--md-code-bg-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Example sentences */
+.example {
+  border-left: 3px solid var(--md-accent-fg-color);
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+/* Vocabulary tables */
+table {
+  width: 100%;
+}
+
+/* Practice section styling */
+details {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--md-code-bg-color);
+  border-radius: 0.5rem;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--md-accent-fg-color);
+}
+
+/* Mobile-friendly adjustments */
+@media screen and (max-width: 76.1875em) {
+  .md-nav__link {
+    font-size: 0.9rem;
+  }
+}
